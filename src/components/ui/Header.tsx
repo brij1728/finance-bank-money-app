@@ -15,10 +15,10 @@ export const Header = () => {
   ];
 
   return (
-    <header className="py-10 ">
+    <header className="py-4">
       <div className="container mx-auto flex justify-between items-center font-clash-display text-black w-full h-[60px]">
-        <div className="flex gap-10 justify-center items-center ">
-          <div className="flex gap-3 justify-center items-center">
+        <div className="flex gap-10 items-center">
+          <div className="flex gap-3 items-center">
             <Image src="/uifryLogo.png" alt="Uifry" width={30} height={30} />
             <div className="relative flex items-center">
               <span className="text-4xl font-bold">uifry</span>
@@ -28,11 +28,11 @@ export const Header = () => {
             </div>
           </div>
           <nav>
-            <ul className="flex space-x-4 font-medium text-xl">
+            <ul className="flex space-x-6 font-medium text-xl">
               {menu.map((item) => (
                 <li
                   key={item.name}
-                  className={`cursor-pointer ${selected === item.name ? 'text-[#FF5555] font-bold text-xl' : 'text-black font-medium'}`}
+                  className={`cursor-pointer ${selected === item.name ? 'text-[#FF5555] font-bold' : 'text-black'}`}
                   onClick={() => setSelected(item.name)}
                 >
                   {item.name}
@@ -41,7 +41,7 @@ export const Header = () => {
             </ul>
           </nav>
         </div>
-        <button className="btn-primary bg-black text-white text-[18px] leading-[28px] py-4 px-[46px] font-semibold rounded w-[180px] h-[60px]">
+        <button className="bg-black text-white text-[18px] leading-[28px] py-3 px-6 font-semibold rounded-sm">
           Download
         </button>
       </div>
