@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export const Hero = () => {
   return (
     <section className="">
@@ -11,11 +13,29 @@ export const Hero = () => {
           faucibus tincidunt eu adipiscing sociis arcu lorem porttitor.
         </p>
         <div className="flex gap-4">
-          <button className="btn-primary bg-black text-white text-sm p-2 px-6 rounded-sm">
-            Get Started
+          <button className="btn-primary bg-black text-white text-[18px] leading-[28px] py-4 px-[23px] rounded font-medium h-[60px]">
+            <span className="flex items-center gap-2">
+              <p className="">Get Started</p>
+              <Image
+                src="/arrow.png"
+                alt="Arrow"
+                width={24}
+                height={12}
+                className="ml-2"
+              />
+            </span>
           </button>
-          <button className="btn-secondary text-sm text-black p-2 px-6 rounded-sm">
-            Watch Video
+          <button className="btn-secondary text-sm text-black text-[18px] leading-[28px] py-4 px-[23px] rounded font-medium flex gap-2 border h-[60px] ">
+            <span className="">
+              <Image
+                src="/playIcon.png"
+                alt="Arrow"
+                width={24}
+                height={12}
+                className="ml-2"
+              />
+            </span>
+            <p className="">Watch Video</p>
           </button>
         </div>
       </div>
