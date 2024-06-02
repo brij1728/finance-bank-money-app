@@ -27,11 +27,11 @@ export const Header = () => {
           </div>
         </div>
         <nav>
-          <ul className="flex space-x-4 text-[#000000] font-medium">
+          <ul className="flex space-x-4 text-[#000000] font-medium text-xl">
             {menu.map((item) => (
               <li
                 key={item.name}
-                className={`cursor-pointer ${selected === item.name ? 'text-[#FF5555] font-bold' : 'text-black font-medium'} font-`}
+                className={`cursor-pointer ${selected === item.name ? 'text-[#FF5555] font-bold text-xl' : 'text-black font-medium'}`}
                 onClick={() => setSelected(item.name)}
               >
                 {item.name}
@@ -39,7 +39,7 @@ export const Header = () => {
             ))}
           </ul>
         </nav>
-        <button className="btn-primary bg-black text-white text-sm p-2 px-6 rounded-sm">
+        <button className="btn-primary bg-black text-white text-[18px] p-2 px-6 rounded-sm">
           Download
         </button>
       </div>
