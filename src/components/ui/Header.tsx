@@ -16,18 +16,18 @@ export const Header = () => {
 
   return (
     <header className="py-4 bg-white shadow ">
-      <div className="container mx-auto flex justify-between items-center font-clash-display">
+      <div className="container mx-auto flex justify-between items-center font-clash-display text-black">
         <div className="flex gap-3 justify-center items-center">
-          <Image src="/uifryLogo.png" alt="Uifry" width={34} height={34} />
+          <Image src="/uifryLogo.png" alt="Uifry" width={30} height={30} />
           <div className="relative flex items-center">
-            <span className="text-2xl font-bold">uifry</span>
-            <span className="absolute top-0 right-0 text-xs transform translate-x-1 -translate-y-1">
+            <span className="text-4xl font-bold">uifry</span>
+            <span className="absolute top-0 right-0 text-[6px] transform translate-x-2.5 translate-y-3.5 ">
               TM
             </span>
           </div>
         </div>
         <nav>
-          <ul className="flex space-x-4 text-[#000000] font-medium text-xl">
+          <ul className="flex space-x-4 font-medium text-xl">
             {menu.map((item) => (
               <li
                 key={item.name}
