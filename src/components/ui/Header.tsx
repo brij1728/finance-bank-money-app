@@ -41,7 +41,7 @@ export const Header = () => {
             </ul>
           </nav>
         </div>
-        <button className="btn-primary bg-black text-white text-[18px] leading-[28px] py-2 px-11 font-semibold rounded w-[180px] h-[60px]">
+        <button className="btn-primary bg-black text-white text-[18px] leading-[28px] py-4 px-[46px] font-semibold rounded w-[180px] h-[60px]">
           Download
         </button>
       </div>

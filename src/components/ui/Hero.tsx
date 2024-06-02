@@ -2,7 +2,7 @@ export const Hero = () => {
   return (
     <section className="">
       <div className="container mx-auto flex flex-col float-start">
-        <div className="text-4xl font-bold text-black ">
+        <div className="text-[64px] font-bold text-black ">
           <h1 className="">Make The Best</h1>
           <h1 className="">Financial Decisions</h1>
         </div>
