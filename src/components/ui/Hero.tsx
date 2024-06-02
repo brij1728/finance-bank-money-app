@@ -1,12 +1,23 @@
 export const Hero = () => {
   return (
-    <section className="text-center py-20 bg-gradient-to-r from-red-500 to-pink-500 text-white">
-      <div className="container mx-auto">
-        <h2 className="text-4xl font-bold">
-          Make The Best Financial Decisions
-        </h2>
-        <p className="mt-4 text-lg">Manage your finances with Uifry Premium</p>
-        <button className="btn-secondary mt-6">Get Started</button>
+    <section className="">
+      <div className="container mx-auto flex flex-col float-start">
+        <div className="text-4xl font-bold text-black ">
+          <h1 className="">Make The Best</h1>
+          <h1 className="">Financial Decisions</h1>
+        </div>
+        <p className="mt-4 text-lg">
+          Cum et convallis risus placerat aliquam, nunc. Scelerisque aliquet
+          faucibus tincidunt eu adipiscing sociis arcu lorem porttitor.
+        </p>
+        <div className="flex gap-4">
+          <button className="btn-primary bg-black text-white text-sm p-2 px-6 rounded-sm">
+            Get Started
+          </button>
+          <button className="btn-secondary text-sm text-black p-2 px-6 rounded-sm">
+            Watch Video
+          </button>
+        </div>
       </div>
     </section>
   );
