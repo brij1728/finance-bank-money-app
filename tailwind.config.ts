@@ -9,10 +9,15 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        'clash-display': ['Clash Display'],
+        'clash-display': ['Clash Display', 'sans-serif'],
+      },
+      colors: {
+        red: '#ff5555',
+        yellow: '#fde598',
       },
     },
   },
   plugins: [],
 };
+
 export default config;

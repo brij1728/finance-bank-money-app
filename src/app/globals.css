@@ -7,3 +7,28 @@
 body {
   font-family: 'Clash Display', sans-serif;
 }
+
+.text-glow {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+.text-glow::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 200px;
+  background: radial-gradient(
+    circle at center top,
+    rgba(255, 85, 85, 0.8) 0%,
+    rgba(255, 85, 85, 0.5) 40%,
+    rgba(253, 229, 152, 0.5) 70%,
+    rgba(253, 229, 152, 0) 100%
+  );
+  filter: blur(10px);
+  z-index: -1;
+}
