@@ -21,7 +21,7 @@ Finance Bank Money App is designed to help you make the best financial decisions
 
 Check out the live demo of the project [here](https://finance-bank-money-app.vercel.app/).
 
-![Finance Bank Money App](https://finance-bank-money-app.vercel.app/_next/image?url=%2Fpath_to_screenshot.png&w=1080&q=75)
+![Finance Bank Money App](./public/liveapp.png)
 
 ## Features
 
