@@ -7,6 +7,7 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    darkMode: 'class',
     extend: {
       fontFamily: {
         'clash-display': ['Clash Display', 'sans-serif'],
@@ -14,6 +15,8 @@ const config: Config = {
       colors: {
         red: '#ff5555',
         yellow: '#fde598',
+        primary: '#FFFFFF',
+        secondary: '#333333',
       },
     },
   },

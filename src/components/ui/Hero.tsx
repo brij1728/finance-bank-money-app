@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export const Hero = () => {
   return (
-    <section className="py-10 relative overflow-hidden bg-white h-screen flex items-center">
+    <section className="py-10 relative overflow-hidden  h-screen flex items-center">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between h-full px-4">
         <div className="max-w-xl md:w-1/2 flex flex-col justify-center h-full">
           <div className="text-xl md:text-[60px] font-extrabold text-black leading-6 md:leading-[68px] relative text-glow">
@@ -45,9 +45,8 @@ export const Hero = () => {
               <Image
                 src="/circle.png"
                 alt="Circle"
-                layout="fill"
-                objectFit="contain"
-                className="opacity-50"
+                fill
+                className="object-contain opacity-50"
               />
             </div>
           </div>
@@ -56,24 +55,24 @@ export const Hero = () => {
               <Image
                 src="/iPhone-13-Pro-Front5.png"
                 alt="Mobile 1"
-                layout="fill"
-                objectFit="contain"
+                fill
+                className="object-contain"
               />
             </div>
             <div className="absolute z-20 transform -rotate-[10deg] w-[250px] h-[500px] md:w-[300px] md:h-[600px] lg:w-[350px] lg:h-[700px] left-28 top-28">
               <Image
                 src="/iPhone-13-Pro-Front4.png"
                 alt="Mobile 2"
-                layout="fill"
-                objectFit="contain"
+                fill
+                className="object-contain"
               />
             </div>
             <div className="absolute z-10 transform -rotate-[10deg] w-[250px] h-[500px] md:w-[300px] md:h-[600px] lg:w-[350px] lg:h-[700px] left-48 top-36">
               <Image
                 src="/iPhone-13-Pro-Front.png"
                 alt="Mobile 3"
-                layout="fill"
-                objectFit="contain"
+                fill
+                className="object-contain"
               />
             </div>
           </div>

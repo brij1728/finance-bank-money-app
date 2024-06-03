@@ -5,3 +5,8 @@ export * from './Testimonials';
 export * from './FAQ';
 export * from './CTA';
 export * from './Footer';
+export * from './ThemeToggle';
+export * from './DropdownMenu';
+export * from './DropdownMenuContent';
+export * from './DropdownMenuItem';
+export * from './DropdownMenuTrigger';

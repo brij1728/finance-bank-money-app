@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import { ThemeToggle } from './ThemeToggle';
 import { useState } from 'react';
 
 export const Header = () => {
@@ -41,7 +42,11 @@ export const Header = () => {
               {menu.map((item) => (
                 <li
                   key={item.name}
-                  className={`cursor-pointer ${selected === item.name ? 'text-[#FF5555] font-light md:font-bold' : 'text-black'}`}
+                  className={`cursor-pointer ${
+                    selected === item.name
+                      ? 'text-[#FF5555] font-light md:font-bold'
+                      : 'text-black dark:text-white'
+                  }`}
                   onClick={() => setSelected(item.name)}
                 >
                   {item.name}
@@ -50,9 +55,12 @@ export const Header = () => {
             </ul>
           </nav>
         </div>
-        <button className="bg-black text-white text-sm md:text-[18px] leading-4 md:leading-[28px] py-1 md:py-3 px-2 md:px-6 font-normal md:font-semibold rounded">
-          Download
-        </button>
+        <div className="flex gap-2">
+          <ThemeToggle />
+          <button className="bg-black text-white dark:bg-white dark:text-black text-sm md:text-[18px] leading-4 md:leading-[28px] py-1 md:py-3 px-2 md:px-6 font-normal md:font-semibold rounded">
+            Download
+          </button>
+        </div>
       </div>
     </header>
   );
